@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finpay</title>
+    <style>
+      
+            *{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+.form{
+            width: 350px;
+            height: 480px;
+            background: silver;
+            position: absolute;
+            top: -500px;
+            left: 670px;
+            border-radius: 10px;
+            padding: 25px;
+          }
+.wrapper{
+    width:-0px;
+    
+    backdrop-filter: blur(20px);
+    color: black;
+    border-radius: 50px;
+    padding: 30px 40px;
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+.wrapper .input-box{
+    position: relative;
+    width:100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.input-box input{
+    width:100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+        }
+.input-box input::placeholder{
+    color:#fff;
+}
+.input-box i{
+    position: absolute;
+    right:20px;
+    top: 50%;
+    transform:translateY(-50%);
+    font-size: 20px;
+}
+.wrapper.remember-forgot {
+    display:flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 15px 0 15px;
+}
+.remember-forgot label{
+  accent-color:#fff ; 
+  margin-right: 3px; 
+}
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,o,o,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.wrapper.register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover{
+  text-decoration: underline;  
+}
+    .body{
+      body{
+            background-color: #fff;
+            background-size: cover; 
+            background-position: center;
+         } 
+    }  
+     
+          header{
+          display: flex;
+          width: 100%;
+          color:black;
+          background-color: white;
+          height: 90px;
+          font-size: small;
+          align-items: center;
+          justify-content: space-between;
+          position: fixed;
+          padding: 5px;
+          top:50;
+        
+          z-index: 99;
+          transition: all 0.3s ease;
+
+          }
+          header.logo{
+            flex: 1;
+            color: white;
+            margin-left: 50px;
+            text-transform: up;
+
+          }
+          
+    
+
+.form2{
+            width: 1200px;
+            height: 581px;
+            background: yellow;
+            position: absolute;
+            top: -30px;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 10px;
+            padding: 25px;
+
+          } 
+          .form4{
+            width: 300px;
+            height: 196px;
+            background: silver;
+            position: absolute;
+            top: 106px;
+            left: 822px;
+            border-radius: 10px;
+            padding: 25px;
+
+          }    
+.form3{
+            width: 300px;
+            height: 200px;
+            background: silver;
+            position: absolute;
+            top: 137px;
+      left: 342px;
+            border-radius: 10px;
+            padding: 25px;
+
+          } 
+
+  .form5{
+            width: 300px;
+            height: 210px;
+            background: silver;
+            position: absolute;
+            top: 282px;
+          left: 261px;
+            border-radius: 10px;
+            padding: 25px;
+
+          } 
+
+            .form6{
+            width: 300px;
+            height: 212px;
+            background: silver;
+            position: absolute;
+            top: 251px;
+            left: 742px;
+            border-radius: 10px;
+            padding: 25px;
+
+          }  
+        
+          .form7{
+            width: 1200px;
+            height: 439px;
+            background: darkblue;
+            position: absolute;
+            top: 437px;
+            right: -936px;
+            justify-content: center;
+            
+            color: #fff;
+            border-radius: 10px;
+            padding: 25px;
+
+          }  
+          
+          .form8{
+            width: 300px;
+            height: 239px;
+            background: silver;
+            position: absolute;
+            top: 596px;
+          color: #fff;
+          right: -20px;
+            border-radius: 10px;
+            padding: 25px;
+
+          }  
+          .form9{
+            width: 330px;
+            height: 241px;
+            background: silver;
+            position: absolute;
+            top: 568px;
+          left: 100px;
+          color: #fff;
+            border-radius: 10px;
+            padding: 25px;
+
+          } 
+          .form10{
+            width: 320px;
+            height: 241px;
+            background: silver;
+            position: absolute;
+            top: 538px;
+          left: 429px;
+    color: #fff;
+            border-radius: 10px;
+            padding: 25px;
+
+          }
+          .form11{
+            width: 620px;
+            height: 271px;
+            background: white;
+            position: absolute;
+            top: 838px;
+          right: -517px;
+    color: #333;
+            border-radius: 10px;
+            padding: 25px;
+
+          }
+          .form12{
+            width: 620px;
+            height: 271px;
+            background: white;
+            position: absolute;
+            top: 1100px;
+          right: -477px;
+    color: #333;
+            border-radius: 10px;
+            padding: 25px;
+
+          }
+          .form13{
+            width: 620px;
+            height: 271px;
+            background: white;
+            position: absolute;
+            top: 1100px;
+          right: -117px;
+    color: #333;
+            border-radius: 10px;
+            padding: 25px;
+
+          }   
+          .form14{
+            width: 420px;
+            height: 191px;
+            background: darkblue;
+            position: absolute;
+            top: 1400px;
+          left: -517px;
+    color: white;
+            border-radius: 0px;
+            padding: 25px;
+
+          }
+          .form15{
+            width: 1100px;
+            height: 191px;
+            background: darkblue;
+            position: absolute;
+            top: 1370px;
+          left: -137px;
+    color: darkblue;
+            border-radius: 0px;
+            padding: 25px;
+
+          }
+          .form16{
+            width: 750px;
+            height: 251px;
+            background: white;
+            position: absolute;
+            top: 1560px;
+          right: -50px;
+    color: darkblue;
+            border-radius: 0px;
+            padding: 25px;
+
+          }
+        #finpay-footer{
+          background-color: #333;
+          color: #fff;
+          padding: 40px 0;
+          text-align: center;
+        }
+        .footer-content{
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 20px;
+        }
+        .footer-section{
+          margin: 0 20px;
+        }
+        .footer-section h4{
+       margin-bottom: 10px;
+        }
+        .footer-section ul{
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        .footer-section li{
+          margin: 10px;
+        }
+        .footer-section a{
+          color: red;
+          text-decoration: none;
+        }
+        .footer-section a:hover{
+          text-decoration: underline;
+        }
+        .copyright{
+          font-size: 14px;
+          margin-top: 20px;
+        }
+        .form17{
+            width: 850px;
+            height: 251px;
+            background: white;
+            position: absolute;
+            top: 984px;
+          left: -50px;
+    color: darkblue;
+            border-radius: 0px;
+            padding: 25px;
+
+          }
+      
+    </style>
+</head>
+<body>
+ 
+    <header>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAjdJREFUSEvF1kuoTXEUx/HPVQy8JQaSkmcZeKSUCcorJYqUIXmkTOVxU0gemSlhYqhEeafkEQNJKTJQTORR8jbylr1u/6vbsf/n3n3OyV11OrVbe33/a+3ff63VppesrZe4/ie4LwbjfSTbCLgPRqTfELzBc3wrqd4YLMR8LMFWHK0C7o8VWInF6FcC+YRXiP9RGIkBNX67imR39wQcFVlbBDiEYS3Qwz60dwcehIuY0wJgZ4i92FkPHCK4iRkthEaoHdhfD3wcG1oMjXCbcCwHnooHdaDfca4Q2yNMxIRUmTLB1YZZiks5cHyDPSXgl0mRF7AO2xA6qGKT8CQHvoF5XaL9SqqOa7AMh9NVqQIM3y8YiN85cNzFuIdhnzEXD3EQW6rSuvhfT42k41FZ5wpYqPpHgt7BCaxpAhqvbseBzhhl4ChFPF+O80ndofJmbSye1QNHqS8n4PSiRd7NtMgqB7mKRV1fKMs4yhqKjeZ/JfXmKpAy3xgS8Y3/Whk4Js9bTMbjZom4hgW1ceqNxegwG5sEfyiazTS8qAJ+h+FNgOPeRonjVvxjuYzH42kT0PhUMbtv52LkwKuLPnyyQfDZYiFY37niVAVHr+6Ym6l9zk4LwbhMoK9pjMaNONOTA+cyPoVVtf0VozEFMcF+4nUSzr3MzpU9Qw4cTWMW7hdjbGZPMqjqkwOHsEJgp1PmVeN2658Df8TQYoU9gs3dRmnAIQeONTTsVhJNA6Hrv9LIQt+SQ/Qa+A+mil0fy5JsmwAAAABJRU5ErkJggg=="/><div class="logo"><h1>Finpay</h1>
+
+</div>
+  
+    <a href="/">
+        <i STORE="fas fa-product">
+        </i>
+    <a href="product.html">PRODUCT  </a>
+        </li>
+        </ul>
+        <a href="/">
+            <i STORE="fas fa-pricing">
+            </i>
+            <a href="pricing.html">PRICING</a>
+            </li>
+            </ul>
+            <a href="/">
+                <i STORE="fas fa-learn">
+                </i>
+                <a href="learn.html">LEARN</a>
+                </li>
+                </ul>
+               
+        </div>
+        <div>
+            <button type="submit" class="btn">Sign up</button>
+            
+        </div>
+       <div>
+        <button type="submit" class="btn">Login</button> 
+       </div>
+        </header>  
+       <h1>Get paid early</h1>
+        <h1>Save automatically</h1>  
+        <h1>Get paid early</h1>
+        <h1>Save automatically</h1>
+        <h1>all your pay.</h1> 
+        <li>support us with any thing you can give us</li>
+                              
+                                                                            
+             <img src="jero-sennegs-ISCDAxCEbPM-unsplash.jpg" width="400" height="400"></sub>      
+       
+        <div class="wrapper">
+        <form action="">
+            <div class="form">
+             <h1>GET YOUR MONEY HERE</h1>   
+                <l1>$1,876,580</l1>
+            <div class="input-box">
+              <input type="Debit card"
+              placeholder="Debit card" required >
+            </div>
+            <div class="input-box">
+              <input type="account number"
+              placeholder="account number" required>
+      
+            </div>
+            
+            <div class="remember-forgot">
+              <label><input type="checkbox">Remember me</label>
+            <a href="#">forgot account</a>
+          </div>
+
+          
+        
+          <button type="submit" class="btn">pay</button>
+          
+       
+         
+        </div>
+      </form>
+       <div class="wrapper">
+        <form action="">
+            <div class="form2">
+            
+             <h1>EXPERIENCE THAT GROWS WITH YOUR SCALE</h1>  
+             
+              
+            <div>
+ 
+              <img src="calendar-alt-regular-24.png">  <h1>Free transfers</h1>
+              <li>get free transfers by paying $1</li>
+              <li>get it by droping your account</li>
+              <li>and use it</li>
+            </div>
+            <div>
+          
+              <img src="bank-solid-24.png"> <h1>Multiple account</h1>
+            <li>Go an have an account </li>
+            <li>get paid freely</li>
+            <li>Get multiple account</li>
+            <div>
+               <img src="shield-regular-24.png">
+<h1>unmatched security</h1>
+<li>Make your security save</li>
+<li>Do not open it with another account</li>
+<li>Make sure that it is in lock</li>
+          </div>
+          </div>
+        </form2>
+        <h1>WHY THEY PREFER FINPAY</h1>
+        <div class="wrapper">
+          <form action="">
+              <div class="form3">
+              <div>
+                <h1>3K+</h1>
+                <li>Businesses already running</li>
+                <li>on Finpay</li>
+              </div>
+              </div>
+              </form3>
+              <div class="wrapper">
+                <form action="">
+                    <div class="form4">
+                    <div>                      
+                      <li>Instant Withdraw funds</li>
+                      <li>at any time</li>
+                    </div>
+                 <img src="shield-x-regular-24.png"><img src="bank-solid-24.png">
+                    </div>
+                    </form4>
+                    <div class="wrapper">
+                      <form action="">
+                          <div class="form5">
+                          <div> 
+                            <h1>No asset volatillity</h1>                     
+                            <li>Connect to your data</li>
+                            <li>Check your update</li>
+                            <li>Don't press the wrong pin</li>
+                          </div>
+                          </div>
+                          </form5>
+                          <div class="wrapper">
+                            <form action="">
+                                <div class="form6">
+                                <div> 
+                                  <li>Finpay</li>                    
+                                  <h1>$1,876,580</h1>
+                                  <img src="markus-winkler-IrRbSND5EUc-unsplash.jpg" width="250" height="100">
+                                </div>
+                                </div>
+                                </form6>
+                                <div class="wrapper">
+                                  <form action="">
+                                      <div class="form7">
+                                      <div> 
+                                                          
+                                        <h1>Maximize your returns with a </h1>
+                                        <h1>Reserve account that generates</h1>
+                                      </div>
+                                      </div>
+                                      </form7>
+                                      <div class="wrapper">
+                                        <form action="">
+                                            <div class="form8">
+                                            <div> 
+                                                                
+<h1>1</h1>
+<h1>Open your account</h1>
+<li>Get your money there</li>
+<li>Withdraws it by finpay</li>
+                                            </div>
+                                            </div>
+                                            </form8>
+                                            <div class="wrapper">
+                                              <form action="">
+                                                  <div class="form9">
+                                                  <div> 
+                                                                      
+      <h1>2</h1>
+      <h1>Transfer your money</h1>
+      <li>Transfer the money to finpay</li>
+      <li>Get it with your card</li>
+                                                  </div>
+                                                  </div>
+                                                  </form9>
+                                                  <div class="wrapper">
+                                                    <form action="">
+                                                        <div class="form10">
+                                                        <div> 
+                                                                            
+            <h1>3</h1>
+            <h1>Watch your balance grow</h1>
+            <li>Check your phone</li>
+            <li>Send feed back</li>
+          </div>
+        
+                                                        </div>
+                                                        </form10>
+
+                                         <div class="wrapper">
+                                                    <form action="">
+                                                        <div class="form11">
+                                                        <div> 
+                                                                            
+            <h1>We've helped</h1>
+            <h1>Innovative companies</h1>
+            <h1>Innovative companies</h1>
+            <h1>Like Nigeria,Cannada</h1>
+            <h1>Good luck</h1>
+            
+          </div>
+        
+                                                        </div>
+                                                        </form11> 
+                                                        <div class="wrapper">
+                                                          <form action="">
+                                                              <div class="form12">
+                                                              <div> 
+                                                                                  
+                  
+                 <h1>24%      180K        10+</h1>
+                  
+                  <h1>low   high   small </h1>
+                </div>
+              
+                                                              </div>
+                                                              </form13>
+                                                              <div class="wrapper">
+                                                                <form action="">
+                                                                    <div class="form13">
+                                                                    <div> 
+                        <img src="Screenshot_20250417-164959.jpg" width="440" height="250">
+                      </div>
+                    
+                          </div>
+                        </form13>
+                        <div class="wrapper">
+                          <form action="">
+                              <div class="form14">
+                              <div> 
+                                <h1>Ready to level up your</h1>
+                                <h1>Payment process</h1>
+</div>
+
+</div>
+                              </form15>    
+                              <div class="wrapper">
+                                <form action="">
+                                    <div class="form15">
+                                      <div>
+                                        <h1>Love your</h1>
+                                        
+                                        <button type="submit" class="btn">Get Money</button>
+                                        
+                                    </div>
+                                   <div>
+                                    <button type="submit" class="btn">Learn more</button> 
+                                   </div>
+      
+      </div>   
+      </form15>
+      <div class="wrapper">
+        <form action="">
+            <div class="form16">          
+      <footer id="Finpay-footer">
+        <div class="footer-content">
+          <div class="footer-section">
+         <h4>FINPAY</h4>
+            
+          </div>
+          <div class="footer-section">
+            <h4>About Finpay</h4>
+            <p>Finpay is a secure online payment platform.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: <a href="mailto":ayomide@finpay.com">ayomide@finpay.com</a></p>
+            <p>Phone: +2349076141316</p>
+          </div>
+          <div class="footer-section">
+            <img src="fa.png" width="30" height="20">
+          </div>
+          
+            <img src="ddddd.png" width="30" height="20">
+        </div>
+        <div class="copyright">
+          <p>&copy; 2024 Finpay. All right reserved.</p>
+          <p>Check your updates</p>
+        </div>
+      </footer>
+      </div>
+      </form16>
+  <div class="wrapper">
+    <form action="">
+        <div class="form17">
+        <div> 
+<img src="Screenshot_20250417-165106.jpg" width="440" height="250">
+</div>
+
+</div>
+</form17>
+<body style="background: white; color: black;">                                                              
+ 
+</body>
+</html>
